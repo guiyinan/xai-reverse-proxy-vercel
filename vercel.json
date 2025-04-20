@@ -21,7 +21,7 @@
   ],
   "functions": {
     "index.js": {
-      "maxDuration": 601
+      "maxDuration": 60
     }
   }
 }
