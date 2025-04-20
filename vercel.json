@@ -9,7 +9,19 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "index.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type,Authorization",
+        "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+        "Transfer-Encoding": "chunked"
+      }
     }
-  ]
+  ],
+  "functions": {
+    "index.js": {
+      "maxDuration": 600
+    }
+  }
 }
