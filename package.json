@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "反向代理X AI的API，支持流式输出",
   "dependencies": {
     "express": "^4.21.2",
     "http-proxy-middleware": "^3.0.3",
     "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
